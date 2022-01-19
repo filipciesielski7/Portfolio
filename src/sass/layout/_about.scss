@@ -1,0 +1,114 @@
+.name {
+  color: lightblue;
+  @media (max-width: 1199px) and (min-width: 1186px) {
+    font-size: 39px;
+  }
+  @media (min-width: 992px) {
+    display: inline;
+  }
+}
+
+.macbook {
+  width: 100%;
+  z-index: 1;
+}
+
+.btn {
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover{
+    background-color: lightblue;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 135px;
+
+  @media (max-width: 1400px) {
+    width: 115px;
+  }
+  @media (max-width: 1199px) {
+    width: 95px;
+  }
+  @media (max-width: 992px) {
+    width: 125px;
+  }
+  @media (max-width: 768px) {
+    width: 95px;
+  }
+  @media (max-width: 576px) {
+    width: 85px;
+  }
+  @media (max-width: 500px) {
+    width: 75px;
+  }
+  @media (max-width: 450px) {
+    width: 65px;
+  }
+  @media (max-width: 400px) {
+    width: 55px;
+  }
+  @media (max-width: 350px) {
+    width: 45px;
+  }
+  @media (max-width: 300px) {
+    width: 35px;
+  }
+
+  &--react {
+    top: 20%;
+    left: 57%;
+  }
+
+  &--sass {
+    top: 53%;
+    right: 20%;
+  }
+
+  &--html {
+    top: 50%;
+    left: 2%;
+  }
+
+  &--css {
+    top: 15%;
+    left: 30%;
+  }
+
+  &--javascript {
+    top: 30%;
+    left: 82%;
+  }
+
+  &--java {
+    top: 45%;
+    left: 23%;
+  }
+
+  &--sql {
+    top: 13%;
+    left: 10%;
+  }
+
+  &--bootstrap {
+    width: 60px;
+    @media (max-width: 992px) {
+      width: 55px;
+    }
+    @media (max-width: 400px) {
+      width: 35px;
+    }
+    top: 48%;
+    left: 43%;
+  }
+
+  &--git {
+    top: -13%;
+    left: 80%;
+  }
+}
