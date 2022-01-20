@@ -74,6 +74,7 @@ export default function Header() {
                     <Nav.Link
                       className="d-flex justify-content-center"
                       href="#about-me"
+                      onClick={() => setToggled(!toggled)}
                     >
                       About
                     </Nav.Link>
@@ -82,6 +83,7 @@ export default function Header() {
                     <Nav.Link
                       className="d-flex justify-content-center"
                       href="#projects"
+                      onClick={() => setToggled(!toggled)}
                     >
                       Projects
                     </Nav.Link>
@@ -90,6 +92,7 @@ export default function Header() {
                     <Nav.Link
                       className="d-flex justify-content-center"
                       href="#contact"
+                      onClick={() => setToggled(!toggled)}
                     >
                       Contact
                     </Nav.Link>
@@ -100,7 +103,7 @@ export default function Header() {
               <Container>
                 <Row className="justify-content-center">
                   <Col xs="auto" lg={3}>
-                    <Nav.Link href={ROUTES.GITHUB} target="_blank">
+                    <Nav.Link href={ROUTES.GITHUB} target="_blank" rel="noreferrer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -114,7 +117,7 @@ export default function Header() {
                     </Nav.Link>
                   </Col>
                   <Col xs="auto" lg={3}>
-                    <Nav.Link href={ROUTES.LINKEDIN} target="_blank">
+                    <Nav.Link href={ROUTES.LINKEDIN} target="_blank" rel="noreferrer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -128,7 +131,11 @@ export default function Header() {
                     </Nav.Link>
                   </Col>
                   <Col xs="auto" lg={3}>
-                    <Nav.Link href="#cv">
+                    <Nav.Link
+                      role="button"
+                      download="CV.pdf"
+                      href={process.env.PUBLIC_URL + "/static/CV.pdf"}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

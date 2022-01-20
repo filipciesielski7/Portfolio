@@ -22,10 +22,10 @@ export default function About() {
                   <h1 className="name">Filip Ciesielski</h1>
                 </Fade>
                 <p
-                  class="lead text-white text-lg-left text-justify mt-2"
+                  className="lead text-white text-lg-left text-justify mt-2"
                   lg={4}
                 >
-                  I'm computer science student, passionate about building
+                  I'm a computer science student, passionate about building
                   beautiful responsive websites using React. Also interested in
                   software engineering with the intention of becoming Full Stack
                   Developer.
@@ -77,7 +77,7 @@ export default function About() {
               <img
                 className="icon icon--javascript"
                 src={
-                  process.env.PUBLIC_URL + "/images/technologies/javascript.png"
+                  process.env.PUBLIC_URL + "/images/technologies/javascript.svg"
                 }
                 alt=""
               />
@@ -126,6 +126,14 @@ export default function About() {
               <img
                 className="icon icon--git"
                 src={process.env.PUBLIC_URL + "/images/technologies/git.png"}
+                alt=""
+              />
+            </Fade>
+
+            <Fade top delay={800}>
+              <img
+                className="icon icon--github"
+                src={process.env.PUBLIC_URL + "/images/technologies/github.png"}
                 alt=""
               />
             </Fade>

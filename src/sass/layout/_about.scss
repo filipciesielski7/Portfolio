@@ -20,8 +20,24 @@
     box-shadow: none;
   }
 
-  &:hover {
+  &-light:hover {
     background-color: lightblue;
+  }
+
+  &-dark {
+    background-color: white;
+    color: $color-primary;
+  }
+
+  &-dark:hover {
+    background-color: $color-primary;
+    color: white;
+  }
+
+  &-dark:focus,
+  &-dark:active {
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -103,12 +119,24 @@
     @media (max-width: 400px) {
       width: 35px;
     }
-    top: 48%;
+    top: 46%;
     left: 43%;
   }
 
   &--git {
     top: -12%;
     left: 78%;
+  }
+
+  &--github {
+    width: 60px;
+    @media (max-width: 992px) {
+      width: 55px;
+    }
+    @media (max-width: 400px) {
+      width: 35px;
+    }
+    top: 68%;
+    left: 45%;
   }
 }
