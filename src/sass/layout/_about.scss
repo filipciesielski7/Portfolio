@@ -20,7 +20,7 @@
     box-shadow: none;
   }
 
-  &:hover{
+  &:hover {
     background-color: lightblue;
   }
 }
@@ -38,7 +38,7 @@
   @media (max-width: 992px) {
     width: 125px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 95px;
   }
   @media (max-width: 576px) {
@@ -51,13 +51,13 @@
     width: 65px;
   }
   @media (max-width: 400px) {
-    width: 55px;
+    width: 65px;
   }
   @media (max-width: 350px) {
-    width: 45px;
+    width: 55px;
   }
   @media (max-width: 300px) {
-    width: 35px;
+    width: 45px;
   }
 
   &--react {
@@ -108,7 +108,7 @@
   }
 
   &--git {
-    top: -13%;
-    left: 80%;
+    top: -12%;
+    left: 78%;
   }
 }

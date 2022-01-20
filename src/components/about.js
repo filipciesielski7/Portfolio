@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 export default function About() {
   return (
     <section id="about-me" className="bg-dark">
-      <Container className="px-5">
+      <Container className="px-lg-5">
         <Row>
           <Col
             lg={6}
@@ -27,7 +27,8 @@ export default function About() {
                 >
                   I'm computer science student, passionate about building
                   beautiful responsive websites using React. Also interested in
-                  software engineering with the intention of becoming Full Stack Developer.
+                  software engineering with the intention of becoming Full Stack
+                  Developer.
                 </p>
                 <Fade bottom delay={300}>
                   <a

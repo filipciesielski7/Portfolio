@@ -48,10 +48,12 @@ export default function Header() {
         id="navbar"
         collapseOnSelect
         expand="lg"
-        bg={scrolled ? "light" : "dark"}
+        bg={scrolled ? "light" : null}
         variant={scrolled ? "light" : "dark"}
         fixed="top"
-        className="p-lg-4 p-md-3"
+        className={`p-lg-4 p-md-3 ${toggled ? "navbar-shadow" : null} ${
+          scrolled ? null : "transparent"
+        } ${toggled && !scrolled ? "bg-dark" : null}`}
       >
         <Container>
           <Navbar.Toggle
