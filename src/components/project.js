@@ -8,25 +8,24 @@ export default function Project({
   link,
 }) {
   return (
-    <div className="project d-flex justify-content-center align-items-center my-3 my-lg-5">
-      <div className="d-flex flex-column">
+    <div className="project d-flex flex-lg-column justify-content-center align-items-center my-3 my-lg-5">
+      <div className="d-flex flex-column flex-lg-row ">
         {technologies.map((technology) => (
           <img
-            className="m-2"
+            className="project__technology m-2"
             key={technology.name}
             src={process.env.PUBLIC_URL + technology.icon}
             alt={technology.name}
-            style={{ width: "40px" }}
           />
         ))}
       </div>
       <div className="position-relative">
         <img
-          className="project-image"
+          className="project__image"
           src={process.env.PUBLIC_URL + `/images/projects/overview/${name}.png`}
           alt=""
         />
-        <div className="project-card d-flex flex-column bg-white p-3 mx-auto shadow-lg">
+        <div className="project__card d-flex flex-column bg-white pt-3 px-3 mx-auto shadow-lg">
           <div className="d-flex justify-content-between">
             <h5 className="d-inline-block">{name}</h5>
             <div>
@@ -38,9 +37,9 @@ export default function Project({
                   rel="noreferrer"
                 >
                   <img
+                    className="project__link project__link--website"
                     src={process.env.PUBLIC_URL + "/images/helpers/link.svg"}
                     alt="see project"
-                    style={{ width: "25px" }}
                   />
                 </a>
               )}
@@ -52,18 +51,18 @@ export default function Project({
                   rel="noreferrer"
                 >
                   <img
+                    className="project__link project__link--github"
                     src={
                       process.env.PUBLIC_URL +
                       "/images/projects/technologies/github.png"
                     }
                     alt="see on github"
-                    style={{ width: "30px" }}
                   />
                 </a>
               )}
             </div>
           </div>
-          <p className="">{description}</p>
+          <p className="project__description mt-2">{description}</p>
         </div>
       </div>
     </div>

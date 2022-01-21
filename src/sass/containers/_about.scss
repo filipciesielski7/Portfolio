@@ -13,66 +13,35 @@
   z-index: 1;
 }
 
-.btn {
-  &:focus,
-  &:active {
-    outline: none;
-    box-shadow: none;
-  }
-
-  &-light:hover {
-    background-color: lightblue;
-  }
-
-  &-dark {
-    background-color: white;
-    color: $color-primary;
-  }
-
-  &-dark:hover {
-    background-color: $color-primary;
-    color: white;
-  }
-
-  &-dark:focus,
-  &-dark:active {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
 .icon {
   position: absolute;
   width: 135px;
 
-  @media (max-width: 1400px) {
+  @include respond(big-desktop) {
     width: 115px;
   }
-  @media (max-width: 1199px) {
+  @include respond(desktop) {
     width: 95px;
   }
-  @media (max-width: 992px) {
+  @include respond(tab-land) {
     width: 125px;
   }
-  @media (max-width: 767px) {
+  @include respond(tab-port) {
     width: 95px;
   }
-  @media (max-width: 576px) {
+  @include respond(big-phone) {
     width: 85px;
   }
-  @media (max-width: 500px) {
+  @include respond(phone) {
     width: 75px;
   }
-  @media (max-width: 450px) {
+  @include respond(small-phone) {
     width: 65px;
   }
-  @media (max-width: 400px) {
-    width: 65px;
-  }
-  @media (max-width: 350px) {
+  @include respond(very-slim-phone) {
     width: 55px;
   }
-  @media (max-width: 300px) {
+  @include respond(slimmest-phone) {
     width: 45px;
   }
 
@@ -111,32 +80,32 @@
     left: 10%;
   }
 
-  &--bootstrap {
-    width: 60px;
-    @media (max-width: 992px) {
-      width: 55px;
-    }
-    @media (max-width: 400px) {
-      width: 35px;
-    }
-    top: 46%;
-    left: 43%;
-  }
-
   &--git {
     top: -12%;
     left: 78%;
   }
-
-  &--github {
+  
+  &--bootstrap {
+    top: 46%;
+    left: 43%;
     width: 60px;
-    @media (max-width: 992px) {
+    @include respond(tab-port) {
       width: 55px;
     }
-    @media (max-width: 400px) {
+    @include respond(slim-phone) {
       width: 35px;
     }
+  }
+
+  &--github {
     top: 68%;
     left: 45%;
+    width: 60px;
+    @include respond(tab-port) {
+      width: 55px;
+    }
+    @include respond(slim-phone) {
+      width: 35px;
+    }
   }
 }

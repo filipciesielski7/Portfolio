@@ -22,7 +22,7 @@ export const projects = [
   {
     name: "Football-Database",
     description:
-      "The main goal of this project was to implement java spring web application that connects to database using JPA. Frontend was implemented using Vaadin.",
+      "The main goal of this project was to implement a Java Spring web application that connects to database using JPA. Additionally, GUI was implemented using Vaadin.",
     github: "https://github.com/filipciesielski7/Football-Database",
     link: "",
     technologies: [
@@ -47,7 +47,7 @@ export const projects = [
   {
     name: "IRC-Communicator",
     description:
-      "The main goal of this project was to implement IRC-Communicator built of TCP server in C and Java client with GUI implemented using JavaFX.",
+      "The main goal of this project was to implement IRC-Communicator TCP server in C and Java client with GUI implemenented using JavaFX.",
     github: "https://github.com/filipciesielski7/Football-Database",
     link: "",
     technologies: [
@@ -68,9 +68,9 @@ export const projects = [
   {
     name: "Sorting-Madness",
     description:
-      "The main goal of this project was to implement REST API Java Spring Boot application with Maven which can be used by GET and POST requests.",
+      "The main goal of this project was to implement a REST API Java Spring Boot application with Maven which can be used by GET and POST requests to sort the data.",
     github: "https://github.com/filipciesielski7/Sorting-Madness",
-    link: "https://sorting-madness.herokuapp.com/",
+    link: "https://sorting-madness.herokuapp.com/text/insertion,bubble,merge/?strings=welcome,to,the,app",
     technologies: [
       {
         name: "Java",
@@ -89,7 +89,7 @@ export const projects = [
   {
     name: "Poker-Recognizer",
     description:
-      "The main goal of this project was to implement card recognition algorithm using flask and OpenCV library in python.",
+      "The main goal of this project was to implement a card recognition algorithm using flask and OpenCV library in python.",
     github: "https://github.com/filipciesielski7/Poker-Recognizer",
     link: "",
     technologies: [
@@ -110,7 +110,7 @@ export const projects = [
   {
     name: "Euro-2020",
     description:
-      "The main goal of this project was to implement responsive website using React and Sass with BEM methodology.",
+      "The main goal of this project was to implement a responsive website using React and Sass with BEM methodology.",
     github: "https://github.com/filipciesielski7/Euro_2020",
     link: "https://filipciesielski7.github.io/Euro_2020/",
     technologies: [

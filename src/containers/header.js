@@ -7,23 +7,23 @@ export default function Header() {
   const [toggled, setToggled] = useState(false);
 
   const changeHeaderBackground = () => {
-    var navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar");
     if (window.scrollY >= 1) {
-      navbar.classList.add("navbar-shadow");
+      navbar.classList.add("navbar--shadow");
       setScrolled(true);
     } else {
+      navbar.classList.remove("navbar--shadow");
       setScrolled(false);
-      navbar.classList.remove("navbar-shadow");
     }
   };
 
   window.addEventListener("scroll", changeHeaderBackground);
 
-  let prevScrollpos = window.pageYOffset;
+  let prevScrollPos = window.pageYOffset;
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     if (currentScrollPos > 150 && window.innerWidth < 992) {
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollPos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
       } else {
         if (!toggled) {
@@ -39,21 +39,21 @@ export default function Header() {
     } else {
       document.getElementById("navbar").style.top = "0";
     }
-    prevScrollpos = currentScrollPos;
+    prevScrollPos = currentScrollPos;
   };
 
   return (
     <>
       <Navbar
         id="navbar"
-        collapseOnSelect
         expand="lg"
-        bg={scrolled ? "light" : null}
-        variant={scrolled ? "light" : "dark"}
         fixed="top"
-        className={`p-lg-4 p-md-3 ${toggled ? "navbar-shadow" : null} ${
+        bg={scrolled ? "light" : "null"}
+        variant={scrolled ? "light" : "dark"}
+        className={`p-lg-4 p-md-3 ${toggled ? "navbar--shadow" : null} ${
           scrolled ? null : "transparent"
         } ${toggled && !scrolled ? "bg-dark" : null}`}
+        collapseOnSelect
       >
         <Container>
           <Navbar.Toggle
@@ -103,7 +103,11 @@ export default function Header() {
               <Container>
                 <Row className="justify-content-center">
                   <Col xs="auto" lg={3}>
-                    <Nav.Link href={ROUTES.GITHUB} target="_blank" rel="noreferrer">
+                    <Nav.Link
+                      href={ROUTES.GITHUB}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -117,7 +121,11 @@ export default function Header() {
                     </Nav.Link>
                   </Col>
                   <Col xs="auto" lg={3}>
-                    <Nav.Link href={ROUTES.LINKEDIN} target="_blank" rel="noreferrer">
+                    <Nav.Link
+                      href={ROUTES.LINKEDIN}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

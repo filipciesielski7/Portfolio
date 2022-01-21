@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 export default function About() {
+  const [scrolled, setScrolled] = useState(false);
+
+  const isScrolled = () => {
+    if (window.scrollY >= 1) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", isScrolled);
+
   return (
-    <section id="about-me" className="bg-dark">
+    <section
+      id="about-me"
+      className="bg-dark d-relative d-flex flex-column justify-content-center align-items-center overflow-hidden"
+    >
       <Container className="px-lg-5">
         <Row>
           <Col
@@ -32,7 +47,7 @@ export default function About() {
                 </p>
                 <Fade bottom delay={300}>
                   <a
-                    className="btn btn-light"
+                    className="btn btn-light btn--cv"
                     role="button"
                     download="CV.pdf"
                     href={process.env.PUBLIC_URL + "/static/CV.pdf"}
@@ -51,11 +66,11 @@ export default function About() {
               <img
                 className="macbook"
                 src={process.env.PUBLIC_URL + "/images/macbook.png"}
-                alt=""
+                alt="macbook"
               />
             </Fade>
 
-            <Fade top delay={500}>
+            <Fade top delay={550}>
               <img
                 className="icon icon--css"
                 src={process.env.PUBLIC_URL + "/images/technologies/css.png"}
@@ -69,32 +84,33 @@ export default function About() {
                 src={
                   process.env.PUBLIC_URL + "/images/technologies/bootstrap.png"
                 }
-                alt=""
+                alt="bootstrap"
               />
             </Fade>
 
-            <Fade right delay={800}>
+            <Fade right delay={700}>
               <img
                 className="icon icon--javascript"
                 src={
                   process.env.PUBLIC_URL + "/images/technologies/javascript.svg"
                 }
-                alt=""
+                alt="javascript"
               />
             </Fade>
+
             <Fade top delay={600}>
               <img
                 className="icon icon--react"
                 src={process.env.PUBLIC_URL + "/images/technologies/react.png"}
-                alt=""
+                alt="react"
               />
             </Fade>
 
-            <Fade bottom delay={700}>
+            <Fade bottom delay={750}>
               <img
                 className="icon icon--sass"
                 src={process.env.PUBLIC_URL + "/images/technologies/sass.png"}
-                alt=""
+                alt="sass"
               />
             </Fade>
 
@@ -102,15 +118,15 @@ export default function About() {
               <img
                 className="icon icon--html"
                 src={process.env.PUBLIC_URL + "/images/technologies/html.png"}
-                alt=""
+                alt="html"
               />
             </Fade>
 
-            <Fade bottom delay={400}>
+            <Fade bottom delay={450}>
               <img
                 className="icon icon--java"
                 src={process.env.PUBLIC_URL + "/images/technologies/java.png"}
-                alt=""
+                alt="java"
               />
             </Fade>
 
@@ -118,7 +134,7 @@ export default function About() {
               <img
                 className="icon icon--sql"
                 src={process.env.PUBLIC_URL + "/images/technologies/sql.png"}
-                alt=""
+                alt="sql"
               />
             </Fade>
 
@@ -126,20 +142,24 @@ export default function About() {
               <img
                 className="icon icon--git"
                 src={process.env.PUBLIC_URL + "/images/technologies/git.png"}
-                alt=""
+                alt="git"
               />
             </Fade>
 
-            <Fade top delay={800}>
+            <Fade bottom delay={700}>
               <img
                 className="icon icon--github"
                 src={process.env.PUBLIC_URL + "/images/technologies/github.png"}
-                alt=""
+                alt="github"
               />
             </Fade>
           </Col>
         </Row>
       </Container>
+
+      <a href="#projects" className={`scroll ${scrolled ? "d-none" : null}`}>
+        <span></span>
+      </a>
     </section>
   );
 }

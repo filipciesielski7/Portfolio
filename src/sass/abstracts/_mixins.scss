@@ -12,3 +12,76 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY
+/*
+300-px:         Slimmest phone
+301 - 350px:    Very slim phone
+351 - 400px:    Slim phone
+401 - 450px:    Small phone
+451 - 500px:    Phone
+501 - 576px:    Big phone
+577 - 767px:    Tablet portrait
+767 - 992px:    Tablet landscape
+993 - 1199px:   Desktop
+1200 - 1399px:  Big Desktop
+1400+px:        Biggest Desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == slimmest-phone {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
+  @if $breakpoint == very-slim-phone {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+  @if $breakpoint == slim-phone {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+  @if $breakpoint == small-phone {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-phone {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (max-width: 1399px) {
+      @content;
+    }
+  }
+  @if $breakpoint == biggest-desktop {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+}

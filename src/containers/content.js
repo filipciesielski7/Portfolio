@@ -1,7 +1,7 @@
 import React from "react";
-import About from "./about";
-import Contact from "./contact";
-import Projects from "./projects";
+import About from "../components/about";
+import Contact from "../components/contact";
+import Projects from "../components/projects";
 
 export default function Content() {
   return (
