@@ -18,7 +18,7 @@ export default function About() {
   return (
     <section
       id="about-me"
-      className="bg-dark d-relative d-flex flex-column justify-content-center align-items-center overflow-hidden"
+      className="content bg-dark d-relative d-flex flex-column justify-content-center align-items-center overflow-hidden py-1"
     >
       <Container className="px-lg-5">
         <Row>

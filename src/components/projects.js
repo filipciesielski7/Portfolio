@@ -7,21 +7,11 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Projects() {
   return (
-    <section className="projects flex-column py-5" id="projects">
-      <Container className="mx-5 px-5 mb-3 mt-lg-5" xs={12}>
+    <section className="content projects flex-column py-5" id="projects">
+      <Container className="mx-5 px-5 mb-3 mt-lg-5 d-flex justify-content-center align-items-center">
         <Fade when={true} delay={100} triggerOnce={true}>
-          <Row>
-            <Col
-              xs={12}
-              lg={12}
-              className="d-flex justify-content-center align-items-center"
-            >
-              <h3 className="d-inline text-dark" lg={4}>
-                personal{""}
-              </h3>
-              <h1 className="projects__title mx-2 mt-5">projects</h1>
-            </Col>
-          </Row>
+          <h3 className="d-inline text-dark">personal{""}</h3>
+          <h1 className="projects__title mx-2 mt-5">projects</h1>
         </Fade>
       </Container>
 

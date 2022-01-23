@@ -48,7 +48,7 @@ export const projects = [
     name: "IRC-Communicator",
     description:
       "The main goal of this project was to implement IRC-Communicator TCP server in C and Java client with GUI implemenented using JavaFX.",
-    github: "https://github.com/filipciesielski7/Football-Database",
+    github: "https://github.com/filipciesielski7/IRC-Communicator",
     link: "",
     technologies: [
       {

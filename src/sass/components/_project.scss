@@ -6,6 +6,7 @@
     transform: translate(-50%, -50%);
     width: 90%;
     border-radius: 0;
+    transition: 0.5s;
 
     @include respond(big-desktop) {
       font-size: 14px;
@@ -20,9 +21,22 @@
     }
   }
 
+  &:hover &__card {
+    @media (min-width: 992px) {
+      top: 100%;
+    }
+  }
+
+  &:hover &__image {
+    @media (min-width: 992px) {
+      transform: scale(1.01);
+    }
+  }
+
   &__image {
     border: 0.7rem solid lightblue;
     width: 100%;
+    transition: 0.5s;
   }
 
   &__description {
@@ -45,13 +59,5 @@
     &--github {
       width: 30px;
     }
-  }
-}
-
-.projects {
-  background-color: #eeeeee;
-
-  &__title {
-    color: lightblue;
   }
 }

@@ -1,0 +1,14 @@
+.contact {
+  &__title {
+    color: lightblue;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
+}
