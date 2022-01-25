@@ -1,4 +1,6 @@
 .btn {
+  transition: 0.5s;
+
   &:focus,
   &:active {
     outline: none;

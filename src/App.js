@@ -9,11 +9,14 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-        <Switch>
-          <Route path={ROUTES.HOME}>
-            <Home />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route path={ROUTES.HOME}>
+          <Home />
+        </Route>
+        <Route path="*">
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   );
 }

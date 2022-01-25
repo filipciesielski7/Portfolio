@@ -1,7 +1,8 @@
 export const projects = [
   {
     name: "Lech-Typer",
-    description: "Web application...",
+    description:
+      "The main goal of this project was to implement a web application for Lech Poznań football team fans through which they can predict their favourite team match results and compete with each other by collecting points for correct bets.",
     github: "https://github.com/filipciesielski7/Lech_Typer",
     link: "https://lech-typer.web.app/",
     technologies: [
