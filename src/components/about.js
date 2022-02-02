@@ -49,8 +49,10 @@ export default function About() {
                   <a
                     className="btn btn-light btn--cv"
                     role="button"
-                    download="CV.pdf"
-                    href={process.env.PUBLIC_URL + "/static/CV.pdf"}
+                    download="CV_Filip_Ciesielski.pdf"
+                    href={
+                      process.env.PUBLIC_URL + "/static/CV_Filip_Ciesielski.pdf"
+                    }
                   >
                     Download CV
                   </a>
