@@ -40,10 +40,15 @@ export default function About() {
                   className="lead text-white text-lg-left text-justify mt-2"
                   lg={4}
                 >
-                  I'm a computer science student, passionate about building
+                  {/* I'm a computer science student, passionate about building
                   beautiful responsive websites using React. Also interested in
                   software engineering with the intention of becoming Full Stack
-                  Developer.
+                  Developer. */}
+                  I'm a junior cloud engineer at Transition Technologies PSC,
+                  with a degree in computer science from Poznan University of
+                  Technology. I'm passionate about designing and implementing
+                  innovative cloud-based solutions using AWS, and have also
+                  experience in web development.
                 </p>
                 <Fade bottom delay={300}>
                   <a
