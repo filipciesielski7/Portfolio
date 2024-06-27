@@ -44,11 +44,16 @@ export default function About() {
                   beautiful responsive websites using React. Also interested in
                   software engineering with the intention of becoming Full Stack
                   Developer. */}
-                  I'm a junior cloud engineer at Transition Technologies PSC,
+                  {/* I'm a junior cloud engineer at Transition Technologies PSC,
                   with a degree in computer science from Poznan University of
                   Technology. I'm passionate about designing and implementing
                   innovative cloud-based solutions using AWS, and have also
-                  experience in web development.
+                  experience in web development.  */}
+                  I'm a DevOps & Cloud Engineer at Transition Technologies PSC,
+                  with a degree in computer science from Poznan University of
+                  Technology. I'm passionate about designing and implementing
+                  innovative cloud-based solutions using AWS, and have also
+                  experience in web development. at
                 </p>
                 <Fade bottom delay={300}>
                   <a
